@@ -1,0 +1,27 @@
+# functie uitschakelen met '#'
+# dubbele spatie voor de criteria behouden
+
+- name: Home
+  description: Home
+  # folder: pages/
+  permalink: /index 
+  # fa-icon: icon-info
+
+- name: Schilderwerk
+  description: Schilderwerk
+  # folder: pages/schilderwerk/
+  permalink: /schilderwerk
+  # fa-icon: icon-graduation-cap
+
+- name: Mortex
+  description: Mortex
+  #  folder: pages/kleur/
+  permalink: /mortex
+  # fa-icon: icon-info
+
+- name: Interieurdecoratie
+  description: interieurdecoratie
+  # folder: pages/interieurdecoratie
+  permalink: /interieurdecoratie
+  # fa-icon: icon-info
+

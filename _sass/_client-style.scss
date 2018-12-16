@@ -1,0 +1,21 @@
+
+.client-style {
+  font-family: 'neue-kabel';
+  $color: $clientcolor-3;
+  border-bottom: 1px solid $color-grey-2;
+  border-top: 1px solid $color-grey-2;
+  margin: 1em 0 2em;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'neue-kabel';
+  }
+
+  a {
+    color: $clientcolor-3;
+    &:hover {}
+    &:active {}
+    &:focus{}
+  }
+
+
+}

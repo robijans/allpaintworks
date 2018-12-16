@@ -1,0 +1,96 @@
+
+
+
+
+<div class="container-fluid top-bar">
+    <div class="container">
+        <div class="row">
+       
+           <div class="col-9 col-md-8 col-lg-8">
+               <div class="d-flex justify-content-start">
+           
+                <div class="contact-top">
+                   <a href="tel:+32496322344">
+                     <img src="{{site.baseurl}}/assets/images/icons/mobile_icon.png" class="img-fluid mobile-icon" alt="mobile icon">
+                   </a> 
+                    
+                    <div class="text-top">
+                        <a href="tel:+32496322344">
+                            <p class="text-top">+32 496 32 23 44  </p> 
+                        </a>
+                    </div>    
+              
+            </div> 
+           
+             
+                <div class="contact-top">
+                    <a href="mailto:info@allpaintworks.be">
+                        <img src="{{site.baseurl}}/assets/images/icons/email_icon.png" class="img-fluid email-icon">  
+                    </a>
+                    <div class="text-top">
+                        <a href="mailto:info@allpaintworks.be">  
+                            <p class="text-top"> info@allpaintworks.be</p>
+                        </a> 
+                    </div>
+            </div>
+         
+          </div>    
+        </div>
+            
+             <div class="col-3 col-md-4 col-lg-4">
+                        <div class="contact-top d-flex justify-content-end"> 
+                                    <a href="https://www.facebook.com/search/top/?q=all%20paint%20works&epa=SEARCH_BOX">
+                                        <img src="{{site.baseurl}}/images/logo_nav/fb-logo.png" class="img-fluid fb-icon" alt="facebook logo"> 
+                                    </a>
+                        </div>    
+            </div>  
+            
+            
+       </div>
+    </div>    
+</div>       
+
+
+
+<div class="container text-center">
+        <a href="{{site.baseurl}}/index.html">
+            <img  src="{{site.baseurl}}/images/logo_nav/logo_apw_RGB_300px.png" class="img-fluid logo-apw" alt="logo All Paint Works">
+        </a>
+</div>
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container"><!-- <<< verwijder als je navigatie over de ganse breedte wenst -->
+     
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavigation">
+
+        <ul class="navbar-nav">
+        {%- for nav-item in site.data.navigation %}
+        
+            {%- capture item_classes %}{% if page.url contains nav-item.permalink %}active{% endif %}{% endcapture %}
+            {%- if nav-item.folder %}
+                <li class="nav-item dropdown {{ item_classes }}">
+                        <a class="nav-link dropdown-toggle" href="{{ nav-item.permalink | relative_url }}" id="navbarDropdown" title="{{ nav-item.name }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ nav-item.name }}
+                        </a>
+                      
+                </li>
+            {%- else %}
+            <li class="nav-item active{{ item_classes }}">
+                    <a class="nav-link" href="{{ nav-item.permalink | relative_url }}" title="{{ nav-item.name }}">
+                        {{ nav-item.name }}
+                    </a>
+            </li>
+            {%- endif %}
+
+        {%- endfor %}
+        </ul>
+
+        </div>
+    </div><!-- /div.container -->
+</nav>

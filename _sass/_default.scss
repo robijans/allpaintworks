@@ -1,0 +1,138 @@
+// default-styling
+
+
+// TYP0GRAPHY
+// -----------------------------
+
+// Imports
+
+
+@import url("https://use.typekit.net/iyg4gds.css");
+// Website
+
+
+.opener{
+    font-weight: 200;
+    font-size:2rem;
+}
+
+
+strong{
+    font-family: 'neue-kabel', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'neue-kabel';
+    font-weight: 200;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    background-color: $body-bg;
+    color: $body-color;
+    
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+     font-family: 'neue-kabel', serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: $color-black;
+}
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    color: $color-black;
+}
+h3, h4, h5, h6 {
+    font-size: 1rem;
+    margin: 2rem 0 0;
+    color: $color-black;
+}
+p{
+    
+    //Neue Kabel Light
+
+    font-family: 'neue-kabel', sans-serif;
+    font-weight: 100;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-style: normal;
+    color: $color-black;
+}
+
+blockquote {
+    padding-left: 24px;
+    border-left: 2px solid $mycolor-5;
+}
+
+// ongeordende lijstjes met een ander symbool of kleur
+main ul {
+  list-style: none;  
+  margin: 0 0 0em;
+  padding: 0;
+  li {
+    padding-left: 25px;
+    text-indent: -25px;
+    &:before {
+        content:'\2022';
+        color: $clientcolor-3;
+        margin-right: 18px;
+    }    
+  }
+}
+
+//geordende lijstjes met een ander symbool of kleur
+main ol {
+    list-style: none;  
+    margin: 0 0 0em;
+    padding: 0;
+    counter-reset: i 0;
+    li {
+      padding-left: 25px;
+        color:$clientcolor-1;
+      text-indent: -25px;
+      margin-bottom: 1rem;
+      &:before {
+        counter-increment: i;
+        content: counter(i);    
+        padding: 3px 6px;
+        margin-right: 10px;
+        border-radius:100px 100px 0px 100px; 
+          border:2px solid $clientcolor-3;
+        background-color: $mycolor-1;
+        color: $clientcolor-3;
+        font-family: 'neue-kabel';
+        font-weight: 200;
+      }    
+    }
+  }
+
+//forms 
+button, a.btn {
+    
+    &:hover{
+        background-color: $clientcolor-3;
+        color: $clientcolor-2;
+        
+    }
+    &:active{
+        background-color: $clientcolor-2;
+        color:$clientcolor-3;
+     
+    &:focus{}
+}
+input[type=text], textarea {
+
+}
+}
