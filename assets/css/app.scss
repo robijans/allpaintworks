@@ -42,6 +42,9 @@ body{
     color: $clientcolor-2;
     font-weight: 600;
     }
+.mobile-padding{
+    padding: 10px;
+}
 
 
 
@@ -65,7 +68,6 @@ body{
 .text-top{
     display:none;
 }
-
 
 
 
@@ -172,12 +174,110 @@ body{
 }
 
 
-//slide-in effect-top
+
+
+
+.container-image{
+    padding: 10px;
+}
+    
+  
+
+
+
+//footer
+
+.footer-element{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: rgba(255,255,255,0.0);
+    
+}
+.copyright{
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        margin-bottom: 100px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+      }
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    
+    .mobile-padding{
+    padding: 0px;
+}
+    //top-balk
+
+
+.text-top{
+    display:contents;
+    font-weight: 300;
+    font-size:1.1rem;
+
+}
+    
+    
+//nav
+    
+    .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    }
+    
+//index.html
+    
+    
+    .scale:hover {
+            -moz-transform: scale(1.08);
+            -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+            transition: 0.8s ease-in-out;
+
+}
+    
+    
+//mortex.html
+    
+    .row-projects {
+        margin-top: 30px;
+    }
+    
+    
+    //slide-in effect-top
 
 
 .container-image {
   position: relative;
   width: 100%;
+    padding: 0px;
 }
 
 .image {
@@ -283,100 +383,6 @@ body{
    
     
 }
-
-
-//mortex.html
-    
-    .row-mortex, .row-interieurdecoratie {
-        margin-top: 30px;
-    }
-    .row-mortex-1, .row-interieurdecoratie-1{
-        margin-top: 40px;
-    }
-
-
-
-//footer
-
-.footer-element{
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    z-index: -1;
-}
-
-footer{
-    margin-top: 50px;
-    background-color: rgba(255,255,255,0.0);
-    
-}
-.copyright{
-        font-size: 0.8rem;
-        line-height: 1.1rem;
-        margin-bottom: 100px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-    
-        
-
-
-
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-
-      }
-
-
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-    
-    //top-balk
-
-
-.text-top{
-    display:contents;
-    font-weight: 300;
-    font-size:1.1rem;
-
-}
-    
-    
-//nav
-    
-    .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    }
-    
-//index.html
-    
-    
-    .scale:hover {
-            -moz-transform: scale(1.08);
-            -webkit-transform: scale(1.08);
-            transform: scale(1.08);
-            transition: 0.8s ease-in-out;
-
-}
-    
-    
-//mortex.html
-    
-    .row-projects {
-        margin-top: 30px;
-    }
    
     
     
