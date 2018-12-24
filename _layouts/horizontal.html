@@ -17,11 +17,20 @@
 {% include nav_hor.html %}
     <div class="container-fluid">
         
+        <button onclick="goBack()" class="absolute-pos">
+                <img src="{{site.baseurl}}/assets/images/prev.png" class="img-fluid" alt="previous page">
+        </button>
+        
         {{ content }}
     
  </div>        
 {% include footer.html %}
    
 {% include scripts-bottom.html %}
+    <script>
+function goBack() {
+  window.history.back();
+}
+</script>
 </body>
 </html>

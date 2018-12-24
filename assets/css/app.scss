@@ -46,7 +46,9 @@ body{
     padding: 10px;
 }
 
-
+.absolute-pos{
+    visibility: hidden;
+}
 
 
 
@@ -465,6 +467,17 @@ footer{
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
+    
+    .absolute-pos{
+    visibility: visible;
+        z-index: 1;
+        position: fixed;
+        left: 20px;
+        top: 550px;
+        border-radius: 50px;
+        border-style: none;
+        background: transparent!important;
+}
     
    //top-balk        
 
