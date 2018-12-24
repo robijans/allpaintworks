@@ -209,7 +209,9 @@ footer{
 
 
 
-
+#to-top{
+    visibility: hidden;
+}
 
 
 
@@ -232,6 +234,9 @@ footer{
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
+    #to-top{
+    visibility: visible!important;
+}
     
     .mobile-padding{
     padding: 0px;
