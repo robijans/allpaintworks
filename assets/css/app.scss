@@ -110,8 +110,12 @@ body{
     padding: 15px;
     }
 .grey-beam{
-    height: 30px;
-}
+    height:30px;
+    width: 100%; 
+    margin: 0px;
+    background-color: $clientcolor-5;
+
+    }
 
 
 
