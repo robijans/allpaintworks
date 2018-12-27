@@ -126,55 +126,6 @@ body{
 
 
 
-// parallax scrolling effect
-
-.parallax-1, .parallax-2, .parallax-3, .parallax-4, .parallax-5,.parallax-6,.parallax-7, .parallax-8,.parallax-9,.parallax-10{
-    
-    position: relative;
-    height: 350px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-   background-size: cover;
-}
-
-
-
-.parallax-1{
-    background-image: url("../images/homepage/img_parallax_mobile.jpg");
-    
-   }
-
-.parallax-2{
-    background-image: url("../images/schilderwerk/img_parallax_apw_schilderwerk_mobile.jpg");
-   }
-
-.parallax-3{
-    background-image: url("../images/mortex/img_paraalax_apw_mortex-a1.jpg");
-   }   
-   
-.parallax-4{
-    background-image: url("../images/interieurdeco/apw_a2.png");
-   
-    }
-.parallax-5{
-    background-image: url("../images/binnenschilderwerk/img-parallax-apw_a3.png");
-    }
-.parallax-6{
-    background-image: url("../images/buitenschilderwerk/img-parallax.jpg");
-}
-.parallax-7{
-     background-image: url("../images/naadloos_vlies/apw_img_parallax_a3.png");
-}
-.parallax-8{
-     background-image: url("../images/3D_behang/img_parallax_apw_arte_wall.jpg");
-}
-.parallax-9{
-    background-image: url("../images/ORAC/img_parallax_apw_a4.jpg");
-}
-.parallax-10{
-     background-image: url("../images/laminaat/img_parallax_laminaat.png");
-}
 
 
 
@@ -216,7 +167,9 @@ footer{
 
 
 
-
+.mobile-img{
+    visibility: visible;
+}
 
 
 
@@ -230,6 +183,9 @@ footer{
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
+    
+    
+    
 
       }
 
@@ -237,6 +193,13 @@ footer{
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
+    
+    
+    .mobile-img{
+        visibility: hidden;
+    }
+    
+    
     #to-top{
     visibility: visible!important;
 }
@@ -283,7 +246,8 @@ footer{
    }
 
 .parallax-2{
-    background-image: url("../images/schilderwerk/img_parallax_apw_schilderwerk.jpg");
+    background-image: url("../images/schilderwerk/img_parallax_apw_schilderwerk_mobile.jpg");
+    visibility: visible;
    }
 
 .parallax-3{
